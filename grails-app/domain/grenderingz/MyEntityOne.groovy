@@ -1,6 +1,8 @@
 package grenderingz
 
-class MyEntityOne {
+import grails.plugins.orm.auditable.Auditable
+
+class MyEntityOne implements Auditable {
     String      name
     Integer     age
     Boolean     active
@@ -20,8 +22,10 @@ class MyEntityOne {
         lastUpdated nullable: true
     }
 
+    static mapping = { autowire true}
+
     @Override
-    String toString() {
-        name
-    }
+    String toString() { name }
+
+    @Override Collection<String> getLogExcluded() { ['version', 'dateCreated', 'lastUpdated'] }  // audit plug-in new config
 }

@@ -1,6 +1,8 @@
 package grenderingz
 
-class MyEntityThree {
+import grails.plugins.orm.auditable.Auditable
+
+class MyEntityThree implements Auditable {
     String name
     String notes
     Date   publishDate
@@ -17,8 +19,10 @@ class MyEntityThree {
         lastUpdated nullable: true
     }
 
+    static mapping = { autowire true}
+
     @Override
-    String toString() {
-        name
-    }
+    String toString() { name }
+
+    @Override Collection<String> getLogExcluded() { ['version', 'dateCreated', 'lastUpdated'] }  // audit plug-in new config
 }

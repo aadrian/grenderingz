@@ -61,6 +61,7 @@ dependencies {
     testRuntime "net.sourceforge.htmlunit:htmlunit:2.18"
 
     compile "org.grails.plugins:views-json:1.2.8"
+    compile "org.grails.plugins:audit-logging:3.0.0"
 }
 
 bootRun {

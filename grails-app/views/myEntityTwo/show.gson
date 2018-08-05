@@ -1,0 +1,7 @@
+import grenderingz.MyEntityTwo
+
+model {
+    MyEntityTwo myEntityTwo
+}
+
+json g.render(myEntityTwo,[excludes: ['dateCreated','lastUpdated'],deep: true])

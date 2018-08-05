@@ -1,0 +1,11 @@
+import grenderingz.MyEntityThree
+
+model {
+    MyEntityThree myEntityThree
+}
+
+json {
+    id      myEntityThree.id
+    name    myEntityThree.name
+    publish myEntityThree.publishDate
+}

@@ -1,0 +1,7 @@
+import grenderingz.MyEntityThree
+
+model {
+    MyEntityThree myEntityThree
+}
+
+json tmpl.myEntityThree(myEntityThree)

@@ -19,10 +19,12 @@ class MyEntityOneController {
     def indexj(){
         def result = [:]
         def c = MyEntityOne.createCriteria()
-        def found = c.list(params)
+        def found = myEntityOneService.list(params)
         result.put("draw",1)
         result.put("count",found.size())
         result.put("data",found)
+
+        JSON.use('deep')
         render(result as JSON)
     }
 

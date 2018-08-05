@@ -1,12 +1,13 @@
 package grenderingz
 
+import grails.converters.JSON
 import grails.validation.ValidationException
 import static org.springframework.http.HttpStatus.*
 
 class MyEntityTwoController {
 
     static scaffold = MyEntityTwo
-    
+
     MyEntityTwoService myEntityTwoService
 
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
@@ -14,6 +15,18 @@ class MyEntityTwoController {
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)
         respond myEntityTwoService.list(params), model:[myEntityTwoCount: myEntityTwoService.count()]
+    }
+
+    def indexj(){
+        def result = [:]
+        def c = MyEntityTwo.createCriteria()
+        def found = myEntityTwoService.list(params)
+        result.put("draw",1)
+        result.put("count",found.size())
+        result.put("data",found)
+
+        JSON.use('deep')
+        render(result as JSON)
     }
 
     def show(Long id) {

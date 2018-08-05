@@ -385,28 +385,33 @@ compile - Dependencies for source set 'main' (deprecated, use 'implementation ' 
 |    |    \--- javax.el:javax.el-api:2.2.4
 |    \--- org.springframework:spring-orm:4.2.3.RELEASE -> 4.3.16.RELEASE (*)
 +--- org.hibernate:hibernate-core:5.1.5.Final (*)
-\--- org.grails.plugins:gsp -> 3.3.1
-     +--- org.grails:grails-web-gsp-taglib:3.3.1
-     |    +--- org.codehaus.groovy:groovy:2.4.11 -> 2.4.15
-     |    +--- org.slf4j:slf4j-api:1.7.22 -> 1.7.25
-     |    \--- org.grails:grails-web-jsp:3.3.1
-     |         +--- org.codehaus.groovy:groovy:2.4.11 -> 2.4.15
-     |         +--- org.slf4j:slf4j-api:1.7.22 -> 1.7.25
-     |         +--- org.grails:grails-web-common:3.2.10 -> 3.3.5 (*)
-     |         \--- org.grails:grails-web-gsp:3.3.1 (*)
-     +--- commons-lang:commons-lang:2.6
-     +--- org.grails:grails-plugin-codecs:3.2.10 -> 3.3.5
-     |    +--- org.codehaus.groovy:groovy:2.4.15
-     |    +--- org.slf4j:slf4j-api:1.7.25
-     |    +--- org.slf4j:jcl-over-slf4j:1.7.25 (*)
-     |    +--- org.grails:grails-web:3.3.5 (*)
-     |    +--- org.grails:grails-encoder:3.3.5 (*)
-     |    \--- org.grails:grails-codecs:3.3.5
-     |         +--- org.codehaus.groovy:groovy:2.4.15
-     |         +--- org.slf4j:slf4j-api:1.7.25
-     |         +--- org.slf4j:jcl-over-slf4j:1.7.25 (*)
-     |         \--- commons-codec:commons-codec:1.10
-     \--- org.grails:grails-web-jsp:3.3.1 (*)
++--- org.grails.plugins:gsp -> 3.3.1
+|    +--- org.grails:grails-web-gsp-taglib:3.3.1
+|    |    +--- org.codehaus.groovy:groovy:2.4.11 -> 2.4.15
+|    |    +--- org.slf4j:slf4j-api:1.7.22 -> 1.7.25
+|    |    \--- org.grails:grails-web-jsp:3.3.1
+|    |         +--- org.codehaus.groovy:groovy:2.4.11 -> 2.4.15
+|    |         +--- org.slf4j:slf4j-api:1.7.22 -> 1.7.25
+|    |         +--- org.grails:grails-web-common:3.2.10 -> 3.3.5 (*)
+|    |         \--- org.grails:grails-web-gsp:3.3.1 (*)
+|    +--- commons-lang:commons-lang:2.6
+|    +--- org.grails:grails-plugin-codecs:3.2.10 -> 3.3.5
+|    |    +--- org.codehaus.groovy:groovy:2.4.15
+|    |    +--- org.slf4j:slf4j-api:1.7.25
+|    |    +--- org.slf4j:jcl-over-slf4j:1.7.25 (*)
+|    |    +--- org.grails:grails-web:3.3.5 (*)
+|    |    +--- org.grails:grails-encoder:3.3.5 (*)
+|    |    \--- org.grails:grails-codecs:3.3.5
+|    |         +--- org.codehaus.groovy:groovy:2.4.15
+|    |         +--- org.slf4j:slf4j-api:1.7.25
+|    |         +--- org.slf4j:jcl-over-slf4j:1.7.25 (*)
+|    |         \--- commons-codec:commons-codec:1.10
+|    \--- org.grails:grails-web-jsp:3.3.1 (*)
+\--- org.grails.plugins:views-json:1.2.8
+     \--- org.grails:views-core:1.2.8
+          +--- org.grails:grails-encoder:3.1.15 -> 3.3.5 (*)
+          +--- org.grails:grails-web-common:3.1.15 -> 3.3.5 (*)
+          \--- org.grails:grails-web-url-mappings:3.1.15 -> 3.3.5 (*)
 
 compileClasspath - Compile classpath for source set 'main'.
 +--- org.springframework.boot:spring-boot-starter-logging -> 1.5.12.RELEASE
@@ -764,28 +769,33 @@ compileClasspath - Compile classpath for source set 'main'.
 |    |    \--- javax.el:javax.el-api:2.2.4
 |    \--- org.springframework:spring-orm:4.2.3.RELEASE -> 4.3.16.RELEASE (*)
 +--- org.hibernate:hibernate-core:5.1.5.Final (*)
-\--- org.grails.plugins:gsp -> 3.3.1
-     +--- org.grails:grails-web-gsp-taglib:3.3.1
-     |    +--- org.codehaus.groovy:groovy:2.4.11 -> 2.4.15
-     |    +--- org.slf4j:slf4j-api:1.7.22 -> 1.7.25
-     |    \--- org.grails:grails-web-jsp:3.3.1
-     |         +--- org.codehaus.groovy:groovy:2.4.11 -> 2.4.15
-     |         +--- org.slf4j:slf4j-api:1.7.22 -> 1.7.25
-     |         +--- org.grails:grails-web-common:3.2.10 -> 3.3.5 (*)
-     |         \--- org.grails:grails-web-gsp:3.3.1 (*)
-     +--- commons-lang:commons-lang:2.6
-     +--- org.grails:grails-plugin-codecs:3.2.10 -> 3.3.5
-     |    +--- org.codehaus.groovy:groovy:2.4.15
-     |    +--- org.slf4j:slf4j-api:1.7.25
-     |    +--- org.slf4j:jcl-over-slf4j:1.7.25 (*)
-     |    +--- org.grails:grails-web:3.3.5 (*)
-     |    +--- org.grails:grails-encoder:3.3.5 (*)
-     |    \--- org.grails:grails-codecs:3.3.5
-     |         +--- org.codehaus.groovy:groovy:2.4.15
-     |         +--- org.slf4j:slf4j-api:1.7.25
-     |         +--- org.slf4j:jcl-over-slf4j:1.7.25 (*)
-     |         \--- commons-codec:commons-codec:1.10
-     \--- org.grails:grails-web-jsp:3.3.1 (*)
++--- org.grails.plugins:gsp -> 3.3.1
+|    +--- org.grails:grails-web-gsp-taglib:3.3.1
+|    |    +--- org.codehaus.groovy:groovy:2.4.11 -> 2.4.15
+|    |    +--- org.slf4j:slf4j-api:1.7.22 -> 1.7.25
+|    |    \--- org.grails:grails-web-jsp:3.3.1
+|    |         +--- org.codehaus.groovy:groovy:2.4.11 -> 2.4.15
+|    |         +--- org.slf4j:slf4j-api:1.7.22 -> 1.7.25
+|    |         +--- org.grails:grails-web-common:3.2.10 -> 3.3.5 (*)
+|    |         \--- org.grails:grails-web-gsp:3.3.1 (*)
+|    +--- commons-lang:commons-lang:2.6
+|    +--- org.grails:grails-plugin-codecs:3.2.10 -> 3.3.5
+|    |    +--- org.codehaus.groovy:groovy:2.4.15
+|    |    +--- org.slf4j:slf4j-api:1.7.25
+|    |    +--- org.slf4j:jcl-over-slf4j:1.7.25 (*)
+|    |    +--- org.grails:grails-web:3.3.5 (*)
+|    |    +--- org.grails:grails-encoder:3.3.5 (*)
+|    |    \--- org.grails:grails-codecs:3.3.5
+|    |         +--- org.codehaus.groovy:groovy:2.4.15
+|    |         +--- org.slf4j:slf4j-api:1.7.25
+|    |         +--- org.slf4j:jcl-over-slf4j:1.7.25 (*)
+|    |         \--- commons-codec:commons-codec:1.10
+|    \--- org.grails:grails-web-jsp:3.3.1 (*)
+\--- org.grails.plugins:views-json:1.2.8
+     \--- org.grails:views-core:1.2.8
+          +--- org.grails:grails-encoder:3.1.15 -> 3.3.5 (*)
+          +--- org.grails:grails-web-common:3.1.15 -> 3.3.5 (*)
+          \--- org.grails:grails-web-url-mappings:3.1.15 -> 3.3.5 (*)
 
 compileOnly - Compile only dependencies for source set 'main'.
 No dependencies
@@ -1241,6 +1251,11 @@ default - Configuration for default artifacts.
 |    |         +--- org.slf4j:jcl-over-slf4j:1.7.25 (*)
 |    |         \--- commons-codec:commons-codec:1.10
 |    \--- org.grails:grails-web-jsp:3.3.1 (*)
++--- org.grails.plugins:views-json:1.2.8
+|    \--- org.grails:views-core:1.2.8
+|         +--- org.grails:grails-encoder:3.1.15 -> 3.3.5 (*)
+|         +--- org.grails:grails-web-common:3.1.15 -> 3.3.5 (*)
+|         \--- org.grails:grails-web-url-mappings:3.1.15 -> 3.3.5 (*)
 +--- org.glassfish.web:el-impl:2.1.2-b03
 |    \--- javax.el:el-api:2.1.2-b03
 +--- com.h2database:h2 -> 1.4.197
@@ -1637,6 +1652,11 @@ integrationTestCompile - Dependencies for source set 'integration test' (depreca
 |    |         +--- org.slf4j:jcl-over-slf4j:1.7.25 (*)
 |    |         \--- commons-codec:commons-codec:1.10
 |    \--- org.grails:grails-web-jsp:3.3.1 (*)
++--- org.grails.plugins:views-json:1.2.8
+|    \--- org.grails:views-core:1.2.8
+|         +--- org.grails:grails-encoder:3.1.15 -> 3.3.5 (*)
+|         +--- org.grails:grails-web-common:3.1.15 -> 3.3.5 (*)
+|         \--- org.grails:grails-web-url-mappings:3.1.15 -> 3.3.5 (*)
 +--- org.grails:grails-gorm-testing-support -> 1.1.4
 |    +--- org.codehaus.groovy:groovy:2.4.12 -> 2.4.15
 |    +--- org.slf4j:slf4j-api:1.7.22 -> 1.7.25
@@ -2088,6 +2108,11 @@ integrationTestCompileClasspath - Compile classpath for source set 'integration 
 |    |         +--- org.slf4j:jcl-over-slf4j:1.7.25 (*)
 |    |         \--- commons-codec:commons-codec:1.10
 |    \--- org.grails:grails-web-jsp:3.3.1 (*)
++--- org.grails.plugins:views-json:1.2.8
+|    \--- org.grails:views-core:1.2.8
+|         +--- org.grails:grails-encoder:3.1.15 -> 3.3.5 (*)
+|         +--- org.grails:grails-web-common:3.1.15 -> 3.3.5 (*)
+|         \--- org.grails:grails-web-url-mappings:3.1.15 -> 3.3.5 (*)
 +--- org.grails:grails-gorm-testing-support -> 1.1.4
 |    +--- org.codehaus.groovy:groovy:2.4.12 -> 2.4.15
 |    +--- org.slf4j:slf4j-api:1.7.22 -> 1.7.25
@@ -2546,6 +2571,11 @@ integrationTestRuntime - Runtime dependencies for source set 'integration test' 
 |    |         +--- org.slf4j:jcl-over-slf4j:1.7.25 (*)
 |    |         \--- commons-codec:commons-codec:1.10
 |    \--- org.grails:grails-web-jsp:3.3.1 (*)
++--- org.grails.plugins:views-json:1.2.8
+|    \--- org.grails:views-core:1.2.8
+|         +--- org.grails:grails-encoder:3.1.15 -> 3.3.5 (*)
+|         +--- org.grails:grails-web-common:3.1.15 -> 3.3.5 (*)
+|         \--- org.grails:grails-web-url-mappings:3.1.15 -> 3.3.5 (*)
 +--- org.glassfish.web:el-impl:2.1.2-b03
 |    \--- javax.el:el-api:2.1.2-b03
 +--- com.h2database:h2 -> 1.4.197
@@ -3044,6 +3074,11 @@ integrationTestRuntimeClasspath - Runtime classpath of source set 'integration t
 |    |         +--- org.slf4j:jcl-over-slf4j:1.7.25 (*)
 |    |         \--- commons-codec:commons-codec:1.10
 |    \--- org.grails:grails-web-jsp:3.3.1 (*)
++--- org.grails.plugins:views-json:1.2.8
+|    \--- org.grails:views-core:1.2.8
+|         +--- org.grails:grails-encoder:3.1.15 -> 3.3.5 (*)
+|         +--- org.grails:grails-web-common:3.1.15 -> 3.3.5 (*)
+|         \--- org.grails:grails-web-url-mappings:3.1.15 -> 3.3.5 (*)
 +--- org.glassfish.web:el-impl:2.1.2-b03
 |    \--- javax.el:el-api:2.1.2-b03
 +--- com.h2database:h2 -> 1.4.197
@@ -3557,6 +3592,11 @@ runtime - Runtime dependencies for source set 'main' (deprecated, use 'runtimeOn
 |    |         +--- org.slf4j:jcl-over-slf4j:1.7.25 (*)
 |    |         \--- commons-codec:commons-codec:1.10
 |    \--- org.grails:grails-web-jsp:3.3.1 (*)
++--- org.grails.plugins:views-json:1.2.8
+|    \--- org.grails:views-core:1.2.8
+|         +--- org.grails:grails-encoder:3.1.15 -> 3.3.5 (*)
+|         +--- org.grails:grails-web-common:3.1.15 -> 3.3.5 (*)
+|         \--- org.grails:grails-web-url-mappings:3.1.15 -> 3.3.5 (*)
 +--- org.glassfish.web:el-impl:2.1.2-b03
 |    \--- javax.el:el-api:2.1.2-b03
 +--- com.h2database:h2 -> 1.4.197
@@ -3944,6 +3984,11 @@ runtimeClasspath - Runtime classpath of source set 'main'.
 |    |         +--- org.slf4j:jcl-over-slf4j:1.7.25 (*)
 |    |         \--- commons-codec:commons-codec:1.10
 |    \--- org.grails:grails-web-jsp:3.3.1 (*)
++--- org.grails.plugins:views-json:1.2.8
+|    \--- org.grails:views-core:1.2.8
+|         +--- org.grails:grails-encoder:3.1.15 -> 3.3.5 (*)
+|         +--- org.grails:grails-web-common:3.1.15 -> 3.3.5 (*)
+|         \--- org.grails:grails-web-url-mappings:3.1.15 -> 3.3.5 (*)
 +--- org.glassfish.web:el-impl:2.1.2-b03
 |    \--- javax.el:el-api:2.1.2-b03
 +--- com.h2database:h2 -> 1.4.197
@@ -4340,6 +4385,11 @@ testCompile - Dependencies for source set 'test' (deprecated, use 'testImplement
 |    |         +--- org.slf4j:jcl-over-slf4j:1.7.25 (*)
 |    |         \--- commons-codec:commons-codec:1.10
 |    \--- org.grails:grails-web-jsp:3.3.1 (*)
++--- org.grails.plugins:views-json:1.2.8
+|    \--- org.grails:views-core:1.2.8
+|         +--- org.grails:grails-encoder:3.1.15 -> 3.3.5 (*)
+|         +--- org.grails:grails-web-common:3.1.15 -> 3.3.5 (*)
+|         \--- org.grails:grails-web-url-mappings:3.1.15 -> 3.3.5 (*)
 +--- org.grails:grails-gorm-testing-support -> 1.1.4
 |    +--- org.codehaus.groovy:groovy:2.4.12 -> 2.4.15
 |    +--- org.slf4j:slf4j-api:1.7.22 -> 1.7.25
@@ -4791,6 +4841,11 @@ testCompileClasspath - Compile classpath for source set 'test'.
 |    |         +--- org.slf4j:jcl-over-slf4j:1.7.25 (*)
 |    |         \--- commons-codec:commons-codec:1.10
 |    \--- org.grails:grails-web-jsp:3.3.1 (*)
++--- org.grails.plugins:views-json:1.2.8
+|    \--- org.grails:views-core:1.2.8
+|         +--- org.grails:grails-encoder:3.1.15 -> 3.3.5 (*)
+|         +--- org.grails:grails-web-common:3.1.15 -> 3.3.5 (*)
+|         \--- org.grails:grails-web-url-mappings:3.1.15 -> 3.3.5 (*)
 +--- org.grails:grails-gorm-testing-support -> 1.1.4
 |    +--- org.codehaus.groovy:groovy:2.4.12 -> 2.4.15
 |    +--- org.slf4j:slf4j-api:1.7.22 -> 1.7.25
@@ -5249,6 +5304,11 @@ testRuntime - Runtime dependencies for source set 'test' (deprecated, use 'testR
 |    |         +--- org.slf4j:jcl-over-slf4j:1.7.25 (*)
 |    |         \--- commons-codec:commons-codec:1.10
 |    \--- org.grails:grails-web-jsp:3.3.1 (*)
++--- org.grails.plugins:views-json:1.2.8
+|    \--- org.grails:views-core:1.2.8
+|         +--- org.grails:grails-encoder:3.1.15 -> 3.3.5 (*)
+|         +--- org.grails:grails-web-common:3.1.15 -> 3.3.5 (*)
+|         \--- org.grails:grails-web-url-mappings:3.1.15 -> 3.3.5 (*)
 +--- org.glassfish.web:el-impl:2.1.2-b03
 |    \--- javax.el:el-api:2.1.2-b03
 +--- com.h2database:h2 -> 1.4.197
@@ -5747,6 +5807,11 @@ testRuntimeClasspath - Runtime classpath of source set 'test'.
 |    |         +--- org.slf4j:jcl-over-slf4j:1.7.25 (*)
 |    |         \--- commons-codec:commons-codec:1.10
 |    \--- org.grails:grails-web-jsp:3.3.1 (*)
++--- org.grails.plugins:views-json:1.2.8
+|    \--- org.grails:views-core:1.2.8
+|         +--- org.grails:grails-encoder:3.1.15 -> 3.3.5 (*)
+|         +--- org.grails:grails-web-common:3.1.15 -> 3.3.5 (*)
+|         \--- org.grails:grails-web-url-mappings:3.1.15 -> 3.3.5 (*)
 +--- org.glassfish.web:el-impl:2.1.2-b03
 |    \--- javax.el:el-api:2.1.2-b03
 +--- com.h2database:h2 -> 1.4.197
